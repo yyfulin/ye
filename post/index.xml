@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on FuLing&#39;s blog</title>
+    <link>https://gitee.com/yyfl/yyfl/post/</link>
+    <description>Recent content in Posts on FuLing&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>youremail@domain.com (Person)</managingEditor>
+    <webMaster>youremail@domain.com (Person)</webMaster>
+    <lastBuildDate>Mon, 06 Dec 2021 17:36:58 +0800</lastBuildDate><atom:link href="https://gitee.com/yyfl/yyfl/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>什么是BERT？</title>
+      <link>https://gitee.com/yyfl/yyfl/post/myfirst/</link>
+      <pubDate>Mon, 06 Dec 2021 17:36:58 +0800</pubDate>
+      <author>youremail@domain.com (Person)</author>
+      <guid>https://gitee.com/yyfl/yyfl/post/myfirst/</guid>
+      <description>BERT的全称为Bidirectional Encoder Representation from Transformers，是一个预训练的语言表征模型。它强调了不再像以往一样采用传统的单向语言模型或者把两个单向语言模型进行浅层拼接的方法进行预训练，而是采用新的masked language model（MLM），以致能生成深度的双向语言表征。BERT论文发表时提及在11个NLP（Natural Language Processing，自然语言处理）任务中获得了新的state-of-the-art的结果，令人目瞪口呆。
+该模型有以下主要优点：
+1）采用MLM对双向的Transformers进行预训练，以生成深层的双向语言表征。
+2）预训练后，只需要添加一个额外的输出层进行fine-tune，就可以在各种各样的下游任务中取得state-of-the-art的表现。在这过程中并不需要对BERT进行任务特定的结构修改。
+ BERT的结构 以往的预训练模型的结构会受到单向语言模型（从左到右或者从右到左）的限制，因而也限制了模型的表征能力，使其只能获取单方向的上下文信息。而BERT利用MLM进行预训练并且采用深层的双向Transformer组件（单向的Transformer一般被称为Transformer decoder，其每一个token（符号）只会attend到目前往左的token。而双向的Transformer则被称为Transformer encoder，其每一个token会attend到所有的token。）来构建整个模型，因此最终生成能融合左右上下文信息的深层双向语言表征。  </description>
+    </item>
+    
+  </channel>
+</rss>
